@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Детский лагерь «Кристалл» — территория детства</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">Лагерь «Кристалл»</div>
+    <nav class="nav">
+      <a href="#about">О лагере</a>
+      <a href="#shifts">Смены</a>
+      <a href="#conditions">Условия</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Лето, которое запомнится</h1>
+      <p>Детский оздоровительный лагерь в Алтайском крае. Сказки, приключения, спорт и настоящие друзья.</p>
+      <a href="#shifts" class="btn">Смотреть смены 2026</a>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2>О лагере</h2>
+    <p>Лагерь «Кристалл» расположен в роще рядом с рекой Лосиха, в 3 км от Бийской трассы. Рассчитан на 295 человек. Здесь каждый ребёнок может найти занятие по душе: творческие мастерские, спортивные секции, кружки и вечерние мероприятия у костра [citation:2].</p>
+  </section>
+
+  <section id="shifts" class="section section-alt">
+    <h2>Смены 2026</h2>
+    <div class="shifts-grid" id="shiftsGrid"></div>
+  </section>
+
+  <section id="conditions" class="section">
+    <h2>Условия проживания</h2>
+    <div class="conditions-grid">
+      <div class="condition-card">
+        <h3>Проживание</h3>
+        <p>Шесть жилых корпусов. Комнаты рассчитаны на 2–11 человек, в зависимости от корпуса [citation:2].</p>
+      </div>
+      <div class="condition-card">
+        <h3>Питание</h3>
+        <p>Пятиразовое сбалансированное питание в столовой на 300 мест. В меню — мясо, рыба, молочные продукты, каши и фрукты [citation:2].</p>
+      </div>
+      <div class="condition-card">
+        <h3>Досуг</h3>
+        <p>Клуб, библиотека, помещения для творчества, спортивные площадки. Ежедневные отрядные и общелагерные мероприятия [citation:2].</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacts" class="section section-alt">
+    <h2>Контакты</h2>
+    <div class="contacts-block">
+      <div>
+        <p><strong>Адрес лагеря:</strong> Алтайский край, Первомайский район, с. Баюновские Ключи, ул. Лесная, 2а</p>
+        <p><strong>Телефон:</strong> 8 (385-32) 93-1-39</p>
+        <p><strong>Офис в Барнауле:</strong> пр-т Ленина, 10, каб. 205-Б</p>
+        <p><strong>Email:</strong> kristall-altay@mail.ru</p>
+      </div>
+      <form id="feedbackForm">
+        <label for="name">Ваше имя</label>
+        <input type="text" id="name" name="name" placeholder="Как к вам обращаться?" required>
+        
+        <label for="phone">Телефон</label>
+        <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+        
+        <label for="message">Вопрос</label>
+        <textarea id="message" name="message" rows="3" placeholder="Что вы хотите узнать?"></textarea>
+        
+        <button type="submit">Отправить</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Детский лагерь «Кристалл». Все права защищены.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

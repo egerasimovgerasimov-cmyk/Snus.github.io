@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  color: #2d2d2d;
+  line-height: 1.6;
+  background: #f9f7f4;
+}
+
+/* Шапка */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background: #fff;
+  border-bottom: 1px solid #e8e2d9;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #2e6b4f;
+}
+
+.nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #2d2d2d;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: #2e6b4f;
+}
+
+/* Первый экран */
+.hero {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #d4e8d9, #f0e6d6);
+}
+
+.hero-content h1 {
+  font-size: 2.6rem;
+  margin-bottom: 16px;
+  color: #1e3d2b;
+}
+
+.hero-content p {
+  font-size: 1.15rem;
+  max-width: 600px;
+  margin: 0 auto 24px;
+  color: #4a4a4a;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 32px;
+  background: #2e6b4f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: #1f4d37;
+}
+
+/* Секции */
+.section {
+  padding: 60px 32px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section-alt {
+  background: #fff;
+  max-width: none;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 1.9rem;
+  color: #1e3d2b;
+}
+
+/* Смены */
+.shifts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.shift-card {
+  background: #f9f7f4;
+  border-radius: 12px;
+  padding: 24px;
+  border-left: 4px solid #2e6b4f;
+}
+
+.shift-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #1e3d2b;
+}
+
+.shift-card .dates {
+  font-weight: 600;
+  color: #2e6b4f;
+  margin-bottom: 8px;
+}
+
+.shift-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Условия */
+.conditions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.condition-card {
+  background: #f9f7f4;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+}
+
+.condition-card h3 {
+  margin-bottom: 8px;
+  color: #1e3d2b;
+}
+
+/* Контакты */
+.contacts-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contacts-block p {
+  margin-bottom: 10px;
+}
+
+#feedbackForm {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#feedbackForm label {
+  font-weight: 500;
+  margin-top: 6px;
+}
+
+#feedbackForm input,
+#feedbackForm textarea {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+#feedbackForm button {
+  margin-top: 12px;
+  padding: 10px;
+  background: #2e6b4f;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#feedbackForm button:hover {
+  background: #1f4d37;
+}
+
+/* Подвал */
+.footer {
+  text-align: center;
+  padding: 24px;
+  background: #1e3d2b;
+  color: #c8d9d0;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
+
+@media (max-width: 700px) {
+  .header {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .nav a {
+    margin: 0 10px;
+  }
+  .hero-content h1 {
+    font-size: 1.9rem;
+  }
+  .contacts-block {
+    grid-template-columns: 1fr;
+  }
+  .section-alt {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
